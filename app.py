@@ -95,10 +95,4 @@ elif options=='AAPL':
 elif options=='GOOG':
     st.metric(label='GOOG',value='$560.19' ,delta=457.82)
     st.altair_chart(chart(df[df.symbol=='GOOG']),use_container_width=True)
-hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+
