@@ -95,4 +95,6 @@ elif options=='AAPL':
 elif options=='GOOG':
     st.metric(label='GOOG',value='$560.19' ,delta=457.82)
     st.altair_chart(chart(df[df.symbol=='GOOG']),use_container_width=True)
-
+else:
+    st.snow()
+    st.balloons()
