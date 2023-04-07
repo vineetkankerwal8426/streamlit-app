@@ -53,7 +53,7 @@ options = st.selectbox(':green[SELECT STOCK]',['WELCOME','MSFT','AMZN','IBM','AA
 if options=='WELCOME':
     st.snow()
     st.header("WELCOME TO :red[STOCK VIEW]")
-    st.subheader('FOR ANY SUGGESTION REGARDING THIS APP IMPROVEMENT PLEASE CONTACT:')
+    st.subheader('FOR ANY SUGGESTION REGARDING THIS APP IMPROVEMENT, PLEASE CONTACT:')
     st.write('GMAIL: codevkankerwal@gmail.com')
     st.write("LINKEDIN: [vineetkankerwal](https://www.linkedin.com/in/vineet-kankerwal-11145b260)")
     if st.button('PRESS IF YOU LIKE MY WORK'):
