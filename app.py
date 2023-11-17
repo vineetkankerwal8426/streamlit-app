@@ -96,7 +96,7 @@ elif options=='AAPL':
 elif options=='GOOG':
     st.metric(label='GOOG',value='$560.19' ,delta=457.82)
     st.altair_chart(chart(df[df.symbol=='GOOG']),use_container_width=True)
-elif option == 'HIGHEST PRICE PERCENTAGE':
+elif options == 'HIGHEST PRICE PERCENTAGE':
     l1 = df.sort_values(['price',],ascending=False).groupby('symbol').head(1)['price'].values.tolist()
     l2 = df.sort_values(['price',],ascending=False).groupby('symbol').head(1)['symbol'].values.tolist()
     fig = plt.pie(l1,labels=l2,autopct="%1.1f%%")
