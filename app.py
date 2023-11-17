@@ -99,7 +99,8 @@ elif options=='GOOG':
 elif options == 'HIGHEST PRICE PERCENTAGE':
     l1 = df.sort_values(['price',],ascending=False).groupby('symbol').head(1)['price'].values.tolist()
     l2 = df.sort_values(['price',],ascending=False).groupby('symbol').head(1)['symbol'].values.tolist()
-    fig = plt.pie(l1,labels=l2,autopct="%1.1f%%")
+    fig, ax = plt.subplots()
+    ax.pie(l1,labels=l2,autopct="%1.1f%%")
     st.pyplot(fig)
 else:
     st.snow()
